@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#dce8ff"/>
+  <rect x="140" y="120" width="520" height="260" rx="24" fill="#fff"/>
+  <circle cx="250" cy="250" r="56" fill="#1f5bff"/>
+  <text x="250" y="266" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" font-weight="700" fill="#fff">GM</text>
+  <g fill="#9db8f5"><rect x="340" y="200" width="260" height="16" rx="8"/><rect x="340" y="236" width="200" height="12" rx="6"/><rect x="340" y="266" width="230" height="12" rx="6"/></g>
+  <rect x="340" y="304" width="110" height="34" rx="17" fill="#1f5bff"/>
+</svg>

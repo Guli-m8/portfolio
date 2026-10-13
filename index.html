@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guli Maqsudova — Portfolio</title>
+  <meta name="description" content="Guli Maqsudova — kelajak dasturchisi. Shaxsiy portfolio sayti.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Tema miltillashini oldini olish uchun sahifa yuklanishidan oldin o'rnatamiz
+    (function () {
+      var saved = null;
+      try { saved = localStorage.getItem("theme"); } catch (e) {}
+      var dark = saved ? saved === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.setAttribute("data-theme", dark ? "dark" : "light");
+    })();
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="#hero">G.M.</a>
+    <nav class="nav" aria-label="Asosiy menyu">
+      <a href="#about">Men haqimda</a>
+      <a href="#skills">Ko'nikmalar</a>
+      <a href="#projects">Loyihalar</a>
+      <a href="#education">Ta'lim</a>
+      <a href="#contact">Aloqa</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Rejimni almashtirish">Qorong'i rejim</button>
+  </header>
+
+  <main>
+
+    <!-- 1. HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__text">
+        <p class="hero__hello">Salom, men</p>
+        <h1>Guli Maqsudova</h1>
+        <p class="hero__role">Kelajak dasturchisi</p>
+        <p class="hero__slogan">Kod yozaman, skripkada chalaman va har kuni yangi narsa o'rganaman.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#projects">Loyihalarimni ko'rish</a>
+          <a class="btn btn--ghost" href="#contact">Bog'lanish</a>
+        </div>
+      </div>
+      <div class="hero__photo">
+        <!-- O'z rasmingizni images/photo.jpg nomi bilan saqlang -->
+        <img src="C:\Users\Guli\Desktop\images\photo-placeholder.svg" alt="Guli Maqsudova rasmi" width="400" height="480"
+             onerror="this.onerror=null;this.src='images/photo-placeholder.svg';">
+      </div>
+    </section>
+
+    <!-- 2. MEN HAQIMDA -->
+    <section class="section" id="about">
+      <h2>Men haqimda</h2>
+      <div class="about">
+        <p>Mening ismim Guli, men 15 yoshdaman. Maktabda o'qiyman va professional dasturchi bo'lishni orzu qilaman.</p>
+        <p>HTML va CSS'ni bilaman, kichik loyihalar qila olaman. Hozir JavaScript'ni o'rganyapman, shuningdek ingliz tilini va IT sohasidagi inglizcha so'zlarni o'zlashtiryapman.</p>
+        <p>Dasturlashdan tashqari skripkada chalaman: bir yildan keyin musiqa maktabini diplom bilan tugataman. Maktabda ingliz tili, informatika va biologiya olimpiadalarida qatnashganman.</p>
+      </div>
+    </section>
+
+    <!-- 3. KO'NIKMALAR -->
+    <section class="section" id="skills">
+      <h2>Ko'nikmalar</h2>
+      <ul class="skills">
+        <li><strong>HTML</strong><span>Sahifa tuzilmasi va teglar</span></li>
+        <li><strong>CSS</strong><span>Dizayn, ranglar, responsiv sahifalar</span></li>
+        <li><strong>JavaScript</strong><span>Hozir o'rganyapman</span></li>
+        <li><strong>Git va GitHub</strong><span>Hozir o'rganyapman</span></li>
+        <li><strong>Ingliz tili</strong><span>IT sohasidagi inglizcha so'zlar bilan</span></li>
+        <li><strong>Skripka</strong><span>Musiqa maktabida o'qiyman</span></li>
+      </ul>
+    </section>
+
+    <!-- 4. LOYIHALAR -->
+    <section class="section" id="projects">
+      <h2>Loyihalarim</h2>
+      <div class="projects">
+
+        <article class="card">
+          <img src="C:\Users\Guli\Desktop\images\project1.svg" alt="Vizit karta loyihasi" loading="lazy">
+          <div class="card__body">
+            <h3>Mening vizit kartam</h3>
+            <p>O'zim haqimda qisqa ma'lumot va aloqa havolalari joylashgan bir sahifali sayt. HTML va CSS'da yozilgan.</p>
+            <a href="https://github.com/Guli-m8/vizit-karta" target="_blank" rel="noopener">GitHub'da ko'rish</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="C:\Users\Guli\Desktop\images\project2.svg" alt="Skripka sahifasi loyihasi" loading="lazy">
+          <div class="card__body">
+            <h3>Skripka haqida sahifa</h3>
+            <p>Skripka tarixi, mashhur asarlar va mening musiqa maktabidagi yutuqlarim haqida chiroyli sahifa.</p>
+            <a href="https://github.com/Guli-m8/skripka-sahifa" target="_blank" rel="noopener">GitHub'da ko'rish</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="C:\Users\Guli\Desktop\images\project3.svg" alt="IT lug'at loyihasi" loading="lazy">
+          <div class="card__body">
+            <h3>IT inglizcha lug'ati</h3>
+            <p>IT sohasidagi inglizcha so'zlarni tarjimasi bilan ko'rsatadigan kartochkalar to'plami.</p>
+            <a href="https://github.com/Guli-m8/it-lugat" target="_blank" rel="noopener">GitHub'da ko'rish</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 5. TA'LIM VA YUTUQLAR -->
+    <section class="section" id="education">
+      <h2>Ta'lim va yutuqlar</h2>
+      <div class="two-col">
+        <div>
+          <h3>Ta'lim</h3>
+          <ol class="timeline">
+            <li><time>2026 — hozir</time><strong>ITXiva o'quv platformasi</strong><span>Veb-dasturlash kursi</span></li>
+            <li><time>Hozir — 2027</time><strong>Musiqa maktabi</strong><span>Skripka sinfi, 2027-yilda diplom olaman</span></li>
+            <li><time>Hozir</time><strong>Umumiy o'rta maktab</strong><span>Maktab raqamini shu yerga yozing</span></li>
+          </ol>
+        </div>
+        <div>
+          <h3>Yutuqlar</h3>
+          <ul class="achievements">
+            <li>Ingliz tili fani olimpiadasida qatnashdim</li>
+            <li>Informatika fani olimpiadasida qatnashdim</li>
+            <li>Biologiya fani olimpiadasida qatnashdim</li>
+            <li>Birinchi shaxsiy portfolio saytimni yaratdim</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. ALOQA -->
+    <section class="section" id="contact">
+      <h2>Aloqa</h2>
+      <p class="contact__lead">Savolingiz yoki taklifingiz bo'lsa, yozing — javob beraman.</p>
+      <ul class="contact">
+        <li><a href="mailto:email@example.com">maksudovaguli826@gmail.com</a><span>Email</span></li>
+        <li><a href="https://t.me/mksdva11" target="_blank" rel="noopener">@mksdva11</a><span>Telegram</span></li>
+        <li><a href="https://github.com/Guli-m8" target="_blank" rel="noopener">github.com/Guli-m8</a><span>GitHub</span></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Guli Maqsudova</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

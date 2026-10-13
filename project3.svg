@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#e4edff"/>
+  <rect x="120" y="110" width="250" height="280" rx="20" fill="#fff"/>
+  <rect x="430" y="110" width="250" height="280" rx="20" fill="#1f5bff"/>
+  <text x="245" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="#0f1b3d">function</text>
+  <text x="555" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="#fff">funksiya</text>
+  <rect x="190" y="300" width="110" height="10" rx="5" fill="#9db8f5"/>
+  <rect x="500" y="300" width="110" height="10" rx="5" fill="#9fbdff"/>
+</svg>
